@@ -1,0 +1,66 @@
+---
+- hosts: localhost
+  tasks: 
+   - package:
+      name: "{{ item }}"
+      state: present
+     loop:
+       - "apache2"
+       - "openjdk-11-jdk" 
+       - "maven"
+       - "docker"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
