@@ -1,0 +1,5 @@
+---
+- name: installing java on Debian family 
+  apt: 
+    name: openjdk-11-jdk
+    state: present 

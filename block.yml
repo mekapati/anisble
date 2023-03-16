@@ -1,0 +1,16 @@
+---
+  - hosts: localhost 
+    gather_facts: false
+    tasks: 
+     - block: 
+        - command: "ls /home/ubuntu/playbooks"
+          register: playbook_out
+        - command: "ls /home/ubuntu/userfile"
+          register: userfile_out
+        - command: "ls /home/ubuntu/newuser"
+          register: newuser_out
+       ignore_errors: yes  
+
+     - debug: var=playbook_out  
+     - debug: var=userfile_out
+     - debug: var=newuser_out

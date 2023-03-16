@@ -1,0 +1,5 @@
+---  
+- name: installing apache2 for Debian os family 
+  apt: 
+    name: apache2
+    state: present 

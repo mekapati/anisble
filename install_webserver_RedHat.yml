@@ -1,0 +1,5 @@
+---
+- name: installing hhtpd for RedHat os family 
+  yum: 
+    name: httpd 
+    state: present  
